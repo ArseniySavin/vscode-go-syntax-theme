@@ -1,0 +1,222 @@
+{
+  "name": "Go syntax",
+  "type": "dark",
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "namespace": "#c3bfa6"
+  },
+  "tokenColors": [
+    {
+      "name": "TODO Comment",
+      "scope": "keyword.todo",
+      "settings": {
+        "foreground": "#67cc63"
+      }
+    },
+    {
+      "name": "INFO Comment",
+      "scope": [
+        "keyword.info",
+        "keyword.env.info"
+      ],
+      "settings": {
+        "foreground": "#89b7d5"
+      }
+    },
+    {
+      "name": "WARN Comment",
+      "scope": "keyword.warn",
+      "settings": {
+        "foreground": "#e3e56f"
+      }
+    },
+    {
+      "name": "Comment",
+      "scope": [
+        "comment.line",
+        "comment.line.double-slash"
+      ],
+      "settings": {
+        "foreground": "#616E88"
+      }
+    },
+    {
+      "name": "Punctuation",
+      "scope": [
+        "punctuation.other.comma",
+        "punctuation.other.period",
+        "punctuation.definition.begin.bracket.curly",
+        "punctuation.definition.end.bracket.curly",
+        "punctuation.definition.begin.bracket.round",
+        "punctuation.definition.end.bracket.round",
+        "punctuation.definition.bracket.square",
+        "punctuation.definition.dictionary",
+        "punctuation.definition.array",
+        "valid.illegal.expected-dictionary-separator",
+        "punctuation.separator.dictionary.pair",
+        "punctuation.separator.dictionary.key-value",
+        "punctuation.separator.key-value"
+      ],
+      "settings": {
+        "foreground": "#a0a8b7"
+      }
+    },
+    {
+      "name": "Keyword",
+      "scope": [
+        "keyword.import",
+        "keyword.package",
+        "keyword.control",
+        "keyword.const",
+        "keyword.map",
+        "keyword.var",
+        "keyword.type",
+        "keyword.struct",
+        "keyword.function",
+        "keyword.channel",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#d6bd67"
+      }
+    },
+    {
+      "name": "Operators",
+      "scope": [
+        "keyword.operator.comparison",
+        "keyword.operator.assignment",
+        "keyword.operator.logical"
+      ],
+      "settings": {
+        "foreground": "#89b7d5"
+      }
+    },
+    {
+      "name": "Operators Address",
+      "scope": [
+        "keyword.operator.address",
+        "keyword.operator.channel"
+      ],
+      "settings": {
+        "foreground": "#c79e7e"
+      }
+    },
+    {
+      "name": "Numbers",
+      "scope": [
+        "constant"
+      ],
+      "settings": {
+        "foreground": "#cbc6a2"
+      }
+    },
+    {
+      "name": "String Format Placeholder",
+      "scope": [
+        "constant.character.escape",
+        "constant.other.placeholder"
+      ],
+      "settings": {
+        "foreground": "#e1a05b"
+      }
+    },
+    {
+      "name": "String",
+      "scope": [
+        "string.quoted.double",
+        "string.quoted.raw",
+        "source.ini"
+      ],
+      "settings": {
+        "foreground": "#84a26e"
+      }
+    },
+    {
+      "name": "Local Variable",
+      "scope": [
+        "variable.other.assignment",
+        "variable.other.declaration"
+      ],
+      "settings": {
+        "foreground": "#c2c7d1"
+      }
+    },
+    {
+      "name": "Function Variable Parameter",
+      "scope": [
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#989898"
+      }
+    },
+    {
+      "name": "[Go] nil",
+      "scope": [
+        "constant.nil.go"
+      ],
+      "settings": {
+        "foreground": "#a1767e"
+      }
+    },
+    {
+      "name": "[Go] Err",
+      "scope": [
+        "variable.err.go"
+      ],
+      "settings": {
+        "foreground": "#fa8faf"
+      }
+    },
+    {
+      "name": "Basic Type",
+      "scope": [
+        "keyword.int.go"
+      ],
+      "settings": {
+        "foreground": "#89b7d5"
+      }
+    },
+    {
+      "name": "Basic Type & Type Struct",
+      "scope": [
+        "support.type",
+        "entity.name.type",
+        "entity.name.class.message",
+        "entity.name.class"
+      ],
+      "settings": {
+        "foreground": "#c19ee0"
+      }
+    },
+    {
+      "name": "Function",
+      "scope": [
+        "entity.name.function",
+        "support.function.builtin"
+      ],
+      "settings": {
+        "foreground": "#72bac5"
+      }
+    },
+    {
+      "name": "Key",
+      "scope": [
+        "support.type.property-name",
+        "keyword.other"
+      ],
+      "settings": {
+        "foreground": "#d6bd67"
+      }
+    },
+    {
+      "name": "[.proto] Package",
+      "scope": [
+        "string.unquoted.proto.package"
+      ],
+      "settings": {
+        "foreground": "#c3bfa6"
+      }
+    }
+  ]
+}

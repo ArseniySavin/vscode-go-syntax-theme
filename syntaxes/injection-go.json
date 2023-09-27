@@ -1,0 +1,62 @@
+{
+    "scopeName": "go.injection",
+    "injectionSelector": "L:source.go",
+    "patterns": [
+        {
+            "include": "#todo-keyword"
+        },
+        {
+            "include": "#info-keyword"
+        },
+        {
+            "include": "#warn-keyword"
+        },
+        {
+            "include": "#go-err-variable"
+        },
+        {
+            "include": "#go-nil-constant"
+        },
+        {
+            "include": "#go-int-keyword"
+        }
+    ],
+    "repository": {
+        "todo-keyword": {
+            "match": "TODO",
+            "name": "keyword.todo"
+        },
+        "info-keyword": {
+            "match": "INFO",
+            "name": "keyword.info"
+        },
+        "warn-keyword": {
+            "match": "WARN",
+            "name": "keyword.warn"
+        },
+        "go-err-variable": {
+            "patterns": [
+                {
+                    "match": "\\b[A-Za-z_]+err\\b|\\berror[A-Za-z_]+\\b|\\berr\\b",
+                    "name": "variable.err.go"
+                }
+            ]
+        },
+        "go-nil-constant": {
+            "patterns": [
+                {
+                    "match": "nil",
+                    "name": "constant.nil.go"
+                }
+            ]
+        },
+        "go-int-keyword": {
+            "patterns": [
+                {
+                    "match": "\\bint\\b",
+                    "name": "keyword.int.go"
+                }
+            ]
+        }
+    }
+}
