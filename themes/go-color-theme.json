@@ -1,6 +1,6 @@
 {
   "name": "Go theme and syntax",
-  "type": "dark",
+  "type": "light",
   "semanticHighlighting": true,
   "colors": {
     "foreground": "#d8dee9",
@@ -18,7 +18,7 @@
     "editor.background": "#212529"
   },
   "semanticTokenColors": {
-    "namespace": "#c3bfa6"
+    "namespace": "#c3bfa6",
   },
   "tokenColors": [
     {
@@ -49,7 +49,8 @@
       "name": "Comment",
       "scope": [
         "comment.line",
-        "comment.line.double-slash"
+        "comment.line.double-slash",
+        "comment.block"
       ],
       "settings": {
         "foreground": "#616E88"
@@ -73,7 +74,7 @@
         "punctuation.separator.key-value"
       ],
       "settings": {
-        "foreground": "#a0a8b7"
+        "foreground": "#c79e7e"
       }
     },
     {
@@ -89,10 +90,11 @@
         "keyword.struct",
         "keyword.function",
         "keyword.channel",
-        "storage.modifier"
+        "storage.modifier",
+        "keyword.go.mod"
       ],
       "settings": {
-        "foreground": "#d6bd67"
+        "foreground": "#80d3e8"
       }
     },
     {
@@ -100,10 +102,13 @@
       "scope": [
         "keyword.operator.comparison",
         "keyword.operator.assignment",
-        "keyword.operator.logical"
+        "keyword.operator.logical",
+        "keyword.operator.increment",
+        "keyword.operator.decrement",
+        "keyword.operator.arithmetic"
       ],
       "settings": {
-        "foreground": "#89b7d5"
+        "foreground": "#80d3e8"
       }
     },
     {
@@ -113,16 +118,7 @@
         "keyword.operator.channel"
       ],
       "settings": {
-        "foreground": "#c79e7e"
-      }
-    },
-    {
-      "name": "Numbers",
-      "scope": [
-        "constant"
-      ],
-      "settings": {
-        "foreground": "#cbc6a2"
+        "foreground": "#ff80ed"
       }
     },
     {
@@ -139,7 +135,9 @@
       "name": "String",
       "scope": [
         "string.quoted.double",
+        "string.quoted.single",
         "string.quoted.raw",
+        "property.value",
         "source.ini"
       ],
       "settings": {
@@ -157,12 +155,32 @@
       }
     },
     {
+      "name": "Variable Type",
+      "scope": [
+        "variable.type"
+      ],
+      "settings": {
+        "foreground": "#999869"
+      }
+    },
+
+    {
       "name": "Function Variable Parameter",
       "scope": [
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#989898"
+          "foreground": "#858383",
+        //"fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Constant",
+      "scope": [
+        "constant.language.boolean"
+      ],
+      "settings": {
+        "foreground": "#8da176"
       }
     },
     {
@@ -186,7 +204,7 @@
     {
       "name": "Basic Type",
       "scope": [
-        "keyword.int.go"
+        "keyword.int"
       ],
       "settings": {
         "foreground": "#89b7d5"
@@ -201,31 +219,33 @@
         "entity.name.class"
       ],
       "settings": {
-        "foreground": "#c19ee0"
+        "foreground": "#cdb1e6"
       }
     },
     {
       "name": "Function",
       "scope": [
         "entity.name.function",
-        "support.function.builtin"
+        "entity.name.function.support",
       ],
       "settings": {
-        "foreground": "#72bac5"
+        "foreground": "#d6a144"//"#e5c300ce"
       }
     },
     {
       "name": "Key",
       "scope": [
         "support.type.property-name",
-        "keyword.other"
+        "keyword.other",
+        "variable.key",
+        "entity.name.tag"
       ],
       "settings": {
-        "foreground": "#d6bd67"
+        "foreground": "#d6a144"//"#ccad00"
       }
     },
     {
-      "name": "[.proto] Package",
+      "name": "[.proto]",
       "scope": [
         "string.unquoted.proto.package"
       ],

@@ -74,7 +74,8 @@
         "keyword.struct",
         "keyword.function",
         "keyword.channel",
-        "storage.modifier"
+        "storage.modifier",
+        "keyword.go.mod"
       ],
       "settings": {
         "foreground": "#d6bd67"
@@ -85,7 +86,10 @@
       "scope": [
         "keyword.operator.comparison",
         "keyword.operator.assignment",
-        "keyword.operator.logical"
+        "keyword.operator.logical",
+        "keyword.operator.increment",
+        "keyword.operator.decrement",
+        "keyword.operator.arithmetic"
       ],
       "settings": {
         "foreground": "#89b7d5"
